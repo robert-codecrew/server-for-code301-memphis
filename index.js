@@ -28,11 +28,9 @@ app.get('/starwars', (req, res) => {
 })
 
 
-app.get('/starwars/:id', (req, res) => { 
-
-    res.send(
-      req
-    )
+app.get('/starwars/:character', (req, res) => { 
+    
+    res.send(req.params.character)
 })
 
 
