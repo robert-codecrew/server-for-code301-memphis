@@ -1,0 +1,24 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1"
+  },
+  "name": "server-for-code301-memphis",
+  "description": "Simple server using NodeJS and ExpressJS",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/robert-codecrew/server-for-code301-memphis.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robert-codecrew/server-for-code301-memphis/issues"
+  },
+  "homepage": "https://github.com/robert-codecrew/server-for-code301-memphis#readme"
+}
