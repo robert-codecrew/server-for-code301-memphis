@@ -16,6 +16,17 @@ app.get('/', (req, res) => {
     res.send('Hello World');
 })
 
+// send the user a StarWars Character
+app.get('/starwars', (req, res) => {
+    res.send({
+        characterName: "Luke Skywalker",
+        characterAge: 95,
+        light_saber: "green",
+        dad: "The Bad Guy",
+        quip:"May the force be with you...."
+    })
+})
+
 
 
 
