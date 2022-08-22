@@ -30,7 +30,7 @@ app.get('/starwars', (req, res) => {
 
 app.get('/starwars/:id', (req, res) => { 
     if (req.params.id !== 'leia') {
-        res.send(400)
+        res.sendStatus(400)
     } else {
         res.send({
         characterName: "Leia",
