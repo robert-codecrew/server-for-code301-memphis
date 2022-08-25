@@ -26,7 +26,40 @@ app.get('/starwars', (req, res) => {
         quip:"May the force be with you...."
     })
 })
-
+app.get('/users', (req, res) => {
+    res.send([
+        {
+            "username": "ShortStuff",
+            "email": "shortstuff@gmail.com",
+            "bio": "Dont let the size fool you!",
+            "region": "North America"
+        },
+        {
+            "username": "shorterThanMe",
+            "email": "shorterThanMe@gmail.com",
+            "bio": "I might be shorter than you but definitely a better player!",
+            "region": "South America"
+        },
+        {
+            "userName": "elephanTime",
+            "email": "elephanTime@gmail.com",
+            "bio": "I like to make things go BOOM! The bigger the Thing the Better the BOOM!",
+            "region": "North Africa"
+        },
+        {
+            "userName": "theGoat",
+            "email": "theGoat@gmail.com",
+            "bio": "Bio in username",
+            "region": "North America"
+        },
+        {
+            "userName": "flyByNight",
+            "email": "flyByNight@gmail.com",
+            "bio": "I don't play a lot, but when I do...",
+            "region": "European Union"
+        }
+    ])
+})
 
 app.get('/starwars/:id', (req, res) => { 
     if (req.params.id !== 'leia') {
